@@ -1,0 +1,35 @@
+Switch 1 
+>enable
+#configure terminal 
+(Config)# hostname SW1
+
+(config)# enable password cisco
+
+(config)# enable secret tics
+
+(config)# service password-encryption
+
+(config)# line console 0
+(config-line)#password console
+(config-line)#login
+(config-line)#exit
+(config)#
+
+(config)#interface vlan 1
+(config)# ip address 172.168.0.62 255.255.255.192
+(config-if)# description "to Admin"
+(config-if)# no shutdown
+(config-if)#exit
+
+(config)#ip default-gateway 172.168.0.1
+
+(config)# ip domain-name itsoeh.edu
+(config)# username admin password admin 
+(config)# crypto key generate rsa
+[1024]
+(config)#line vty 0 15
+(config-line)# transport input ssh
+(config-line)# login local
+(config-line)#exit
+
+(config)# banner motd "Solo personal autorizado" 
