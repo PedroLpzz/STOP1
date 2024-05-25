@@ -1,1 +1,159 @@
+- Para la configuración de los dispositivos utilizamos las siguientes configuraciones:
+
+Switch 1 
+>enable
+#configure terminal 
+(Config)# hostname SW1
+
+(config)# enable password cisco
+
+(config)# enable secret tics
+
+(config)# service password-encryption
+
+(config)# line console 0
+(config-line)#password console
+(config-line)#login
+(config-line)#exit
+(config)#
+
+(config)#interface vlan 1
+(config)# ip address 172.168.0.62 255.255.255.192
+(config-if)# description "to Admin"
+(config-if)# no shutdown
+(config-if)#exit
+
+(config)#ip default-gateway 172.168.0.1
+
+(config)# ip domain-name itsoeh.edu
+(config)# username admin password admin 
+(config)# crypto key generate rsa
+[1024]
+(config)#line vty 0 15
+(config-line)# transport input ssh
+(config-line)# login local
+(config-line)#exit
+
+(config)# banner motd "Solo personal autorizado" 
+----- Switch 2----
+>enable
+#configure terminal 
+(Config)# hostname SW2
+
+(config)# enable password cisco
+
+(config)# enable secret tics
+
+(config)# service password-encryption
+
+(config)# line console 0
+(config-line)#password console
+(config-line)#login
+(config-line)#exit
+(config)#
+
+(config)#interface vlan 1
+(config)# ip address 172.168.0.94 255.255.255.224
+(config-if)# description "to Admin"
+(config-if)# no shutdown
+(config-if)#exit
+
+(config)#ip default-gateway 172.168.0.65
+
+(config)# ip domain-name itsoeh.edu
+(config)# username admin password admin 
+(config)# crypto key generate rsa
+[1024]
+(config)#line vty 0 15
+(config-line)# transport input ssh
+(config-line)# login local
+(config-line)#exit
+
+(config)# banner motd "Solo personal autorizado" 
+
+Router 1 
+>enable
+#configure terminal 
+(Config)# hostname R1
+
+(config)# enable password cisco
+
+(config)# enable secret tics
+
+(config)# service password-encryption
+
+(config)# line console 0
+(config-line)#password console
+(config-line)#login
+(config-line)#exit
+(config)#
+
+(config)#interface g0/1
+(config)# ip address 172.168.0.1 255.255.255.192
+(config-if)# description "toSW1"
+(config-if)# no shutdown
+(config-if)#exit
+
+(config)#interface g0/0
+(config)# ip address 10.0.0.5 255.255.255.252
+(config-if)# description "toR2"
+(config-if)# no shutdown
+(config-if)#exit
+
+(config)# ip domain-name itsoeh.edu
+(config)# username admin password admin 
+(config)# crypto key generate rsa
+[1024]
+(config)#line vty 0 15
+(config-line)# transport input ssh
+(config-line)# login local
+(config-line)#exit
+
+(config)# banner motd "Solo personal autorizado" 
+
+(config)# ip route 172.168.0.64 255.255.255.224 10.0.0.6
+
+Router 2 
+>enable
+#configure terminal 
+(Config)# hostname R2
+
+(config)# enable password cisco
+
+(config)# enable secret tics
+
+(config)# service password-encryption
+
+(config)# line console 0
+(config-line)#password console
+(config-line)#login
+(config-line)#exit
+(config)#
+
+(config)#interface g0/1
+(config)# ip address 172.168.0.65 255.255.255.224
+(config-if)# description "toSW2"
+(config-if)# no shutdown
+(config-if)#exit
+
+(config)#interface g0/0
+(config)# ip address 10.0.0.6 255.255.255.252
+(config-if)# description "toR1"
+(config-if)# no shutdown
+(config-if)#exit
+
+(config)# ip domain-name itsoeh.edu
+(config)# username admin password admin 
+(config)# crypto key generate rsa
+[1024]
+(config)#line vty 0 15
+(config-line)# transport input ssh
+(config-line)# login local
+(config-line)#exit
+
+(config)# banner motd "Solo personal autorizado"
+
+(config)# ip route 172.168.0.0 255.255.255.192 10.0.0.5 
+
+ 
 
