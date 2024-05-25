@@ -11,11 +11,10 @@ Examinar la arquitectura, topología y rendimiento de la red de comunicaciones q
 - Implementar medidas de seguridad adecuadas (firewalls, encriptación, autenticación, etc.)
 
 **Registros de incidentes**
-
--Detalles de cada solicitud de cita realizada (fecha, hora, usuario, tipo de cita, etc.)
--Estado de las solicitudes (pendiente, aprobada, rechazada, cancelada)
--Motivos de rechazo o cancelación de citas
--Descripción detallada de los errores o fallas en el sistema (caídas, problemas de conectividad, bloqueos, etc.)
--Información sobre el impacto y la resolución de dichos incidentes
+- Detalles de cada solicitud de cita realizada (fecha, hora, usuario, tipo de cita, etc.)
+- Estado de las solicitudes (pendiente, aprobada, rechazada, cancelada).
+- Motivos de rechazo o cancelación de citas.
+- Descripción detallada de los errores o fallas en el sistema (caídas, problemas de conectividad, bloqueos, etc.)
+- Información sobre el impacto y la resolución de dichos incidentes.
 
 
