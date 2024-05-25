@@ -1,1 +1,33 @@
+                                                      La tolerancia a fallos  
+
+ Es un aspecto crucial en el diseño de redes, ya que permite que éstas sigan operando de manera fiable incluso cuando se producen problemas en alguno de sus componentes. Esta característica es fundamental para garantizar la continuidad de los servicios y aplicaciones que dependen de la infraestructura de red.
+
+Para lograr tolerancia a fallos en la topología de red, se utilizan diversas técnicas clave:
+
+1. Redundancia:
+
+   • Contar con múltiples caminos o rutas de acceso entre los nodos de la red.
+   • Si falla uno de los enlaces, la comunicación puede enrutarse a través de otros caminos.
+
+2. Conmutación por error:
+
+   • La red tiene la capacidad de detectar fallos y redirigir automáticamente el tráfico a rutas alternativas.
+   • Esto permite mantener el servicio sin interrupciones.
+
+3. Balanceo de carga:
+
+   • Distribuir el tráfico de manera equilibrada entre los diferentes enlaces y componentes de la red.
+   • Evita la sobrecarga de alguno de los elementos de la red.
+
+4. Monitorización y diagnóstico:
+
+   • Implementar mecanismos que permitan detectar y aislar rápidamente los fallos.
+   • Facilita la implementación de acciones correctivas necesarias.
+
+5. Redundancia en los componentes:
+
+   • Utilizar hardware redundante, como switches, routers o servidores en paralelo.
+   • Si falla uno de ellos, otro puede asumir sus funciones.
+
+Estas técnicas permiten que la red siga funcionando incluso cuando se produce un fallo o interrupción en alguno de sus componentes.
 
