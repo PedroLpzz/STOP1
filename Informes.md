@@ -1,5 +1,6 @@
 
 **Análisis de la Red**
+
 Examinar la arquitectura, topología y rendimiento de la red de comunicaciones que soporta el sistema de gestión de citas, para identificar posibles cuellos de botella o puntos débiles. De igual manera evaluar la usabilidad, accesibilidad y eficiencia de las interfaces y herramientas de gestión de citas, desde la perspectiva de los usuarios (personal administrativo, asesores, ciudadanos, etc.).
 
 **Pruebas de redimiento y seguridad**
