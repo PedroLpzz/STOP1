@@ -1,1 +1,35 @@
+## Pruebas de Conectividad, Rendimiento y Seguridad para el Sistema de Gestión de Documentos
 
+### Pruebas de Conectividad
+
+- **Revisiones de conectividad:** Realizamos revisiones de la conectividad de todos los clientes y servidores conectados a la red de la presidencia municipal. 
+Esto incluye verificar que todos los dispositivos y aplicaciones puedan comunicarse entre sí sin problemas.
+- **Conexiones internas y externas:** Probamos las conexiones tanto dentro de nuestra propia red como hacia el internet, 
+para asegurarnos de que todo esté bien integrado y funcionando sin interrupciones.
+- **Acceso a recursos:** Revisamos que los equipos y aplicaciones puedan acceder a los recursos y servidores necesarios, 
+como la base de datos centralizada en SQL Server y el servidor web que aloja la aplicación desarrollada en C#.
+
+### Pruebas de Rendimiento
+
+- **Evaluación de rendimiento de la red:** Evaluamos el rendimiento de la red midiendo la velocidad de transferencia de datos, 
+latencia y capacidad de tráfico para asegurar un funcionamiento eficiente del sistema.
+- **Monitoreo de recursos:** Monitoreamos el uso de recursos como ancho de banda, procesamiento y almacenamiento. 
+Realizamos ajustes necesarios para mantener un óptimo desempeño, especialmente durante los picos de actividad cuando hay un alto volumen de solicitudes de documentos.
+- **Medición de tiempos de respuesta:** Medimos los tiempos de respuesta para operaciones clave del sistema, como la creación, 
+modificación y cancelación de solicitudes, asegurando que estas se realicen de manera ágil y eficiente.
+
+
+### Pruebas de Seguridad
+
+- **Evaluaciones de seguridad de la red:** Realizamos evaluaciones de seguridad para identificar y mitigar vulnerabilidades en la red. 
+Esto incluye pruebas de intrusión y revisiones de configuraciones de seguridad.
+- **Pruebas de efectividad de medidas de seguridad:** Probamos la efectividad de nuestras medidas de seguridad, 
+como firewalls, sistemas de detección de intrusos y controles de acceso, para asegurar que estén funcionando correctamente 
+y protejan el sistema contra amenazas.
+
+- **Verificación de autenticación y cifrado:** 
+
+Verificamos que los mecanismos de autenticación y cifrado implementados 
+estén operando adecuadamente para proteger los datos de los usuarios y asegurar que solo personas autorizadas tengan acceso al sistema.
+- **Protección de datos:** Aseguramos que los datos de los usuarios estén protegidos contra ataques o accesos no autorizados 
+mediante técnicas de cifrado y políticas de acceso bien definidas.
