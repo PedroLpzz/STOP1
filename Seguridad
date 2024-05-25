@@ -2,34 +2,35 @@
 
 1. Firewall
 
-- Se ha implementado un firewall perimetral que controla y filtra el tráfico que entra y sale de la red interna.
-- El firewall cuenta con reglas de filtrado avanzadas para bloquear accesos no autorizados, detectar ataques y aplicar políticas de seguridad granulares.
+ • Se ha implementado un firewall perimetral que controla y filtra el tráfico que entra y sale de la red interna.
+ • El firewall cuenta con reglas de filtrado avanzadas para bloquear accesos no autorizados, detectar ataques y aplicar políticas de seguridad granulares.
 
 2. Sistema de Detección de Intrusiones (IDS)
 
-- Se ha desplegado un sistema de detección de intrusiones (IDS) que monitorea constantemente el tráfico de la red en busca de actividades sospechosas o maliciosas.
-- El IDS está configurado para generar alertas en caso de detectar posibles intrusiones o intentos de ataques, permitiendo una rápida respuesta y mitigación.
+ • Se ha desplegado un sistema de detección de intrusiones (IDS) que monitorea constantemente el tráfico de la red en busca de actividades sospechosas o maliciosas.
+ • El IDS está configurado para generar alertas en caso de detectar posibles intrusiones o intentos de ataques, permitiendo una rápida respuesta y mitigación.
 
 3. Autenticación de Usuarios
 
-- Se requiere autenticación de usuarios con credenciales únicas (usuario y contraseña) para acceder a los recursos de la red.
-- Se aplican políticas de gestión de contraseñas, como longitud mínima, complejidad y cambio periódico, para aumentar la seguridad de las cuentas de usuario.
-- Se utiliza la autenticación multifactor cuando es posible, combinando la contraseña con otros factores como tokens hardware o biometría.
+ • Se requiere autenticación de usuarios con credenciales únicas (usuario y contraseña) para acceder a los recursos de la red.
+ • Se aplican políticas de gestión de contraseñas, como longitud mínima, complejidad y cambio periódico, para aumentar la seguridad de las cuentas de usuario.
+ • Se utiliza la autenticación multifactor cuando es posible, combinando la contraseña con otros factores como tokens hardware o biometría.
 
 4. Cifrado de Datos
-- Todos los datos en tránsito por la red se encuentran cifrados utilizando protocolos seguros como TLS/SSL o VPNs.
-- Los datos almacenados en servidores y dispositivos también se cifran a nivel de disco o archivo para proteger la confidencialidad de la información.
-- Se aplican políticas de cifrado de extremo a extremo, desde los dispositivos de los usuarios hasta los servidores centrales.
+ • Todos los datos en tránsito por la red se encuentran cifrados utilizando protocolos seguros como TLS/SSL o VPNs.
+ • Los datos almacenados en servidores y dispositivos también se cifran a nivel de disco o archivo para proteger la confidencialidad de la información.
+ • Se aplican políticas de cifrado de extremo a extremo, desde los dispositivos de los usuarios hasta los servidores centrales.
 
 5. Segmentación de la Red
 
-- La red se encuentra segmentada en diferentes subredes o zonas lógicas, separadas por firewalls o dispositivos de control de acceso.
-- Esto permite aislar y controlar el tráfico entre los diferentes segmentos, limitando la propagación de amenazas en caso de incidentes.
-- Se definen políticas de acceso estrictas que restringen la comunicación únicamente a lo necesario entre las distintas zonas.
+ • La red se encuentra segmentada en diferentes subredes o zonas lógicas, separadas por firewalls o dispositivos de control de acceso.
+ • Esto permite aislar y controlar el tráfico entre los diferentes segmentos, limitando la propagación de amenazas en caso de incidentes.
+ • Se definen políticas de acceso estrictas que restringen la comunicación únicamente a lo necesario entre las distintas zonas.
 
 6. Actualizaciones y Parches de Seguridad
 
-- Se mantiene un programa de actualización y aplicación de parches de seguridad en todos los sistemas y aplicaciones de la red, de manera oportuna.
-- Esto permite mitigar vulnerabilidades conocidas y reducir la superficie de ataque ante amenazas emergentes.
+ • Se mantiene un programa de actualización y aplicación de parches de seguridad en todos los sistemas y aplicaciones de la red, de manera oportuna.
+ • Esto permite mitigar vulnerabilidades conocidas y reducir la superficie de ataque ante amenazas emergentes.
+
 Estas son algunas de las principales medidas de seguridad implementadas en la red de computadoras para protegerla tanto de amenazas internas como externas. El objetivo es mantener un entorno seguro y resiliente ante posibles incidentes de ciberseguridad.
 
